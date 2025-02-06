@@ -1,3 +1,5 @@
+<script>
+
 document.getElementById('productForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -48,3 +50,5 @@ document.getElementById('exportBtn').addEventListener('click', function() {
     const workbook = XLSX.utils.table_to_book(table, {sheet: 'Products'});
     XLSX.writeFile(workbook, 'products_expiration.xlsx');
 });
+
+</script>
